@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #424651;
+    background-size:cover;
+    font-family: serif;
+}
+
+/*cabecera y nav */
+.cabecera__pagina{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(5, 190, 5);
+}
+
+#buscar{
+    width: 250px;
+    height: 30px;
+    
+}
+.search{
+    width: 250px;
+    height: 30px;
+    
+}
+
+.iconos{
+    display:flex;
+    width: 50px;
+    height: 50px;
+}
+
+.iconos_contenidos{
+    object-fit: cover;
+    width: 80%;
+    height:80%;
+}
+
+.boton__lista__usuario{
+    width: 50px;
+    height: 50px;
+}
+
+.iconos form div button{
+    width: 50px;
+    height: 50px;
+    align-content: center;
+}
+div i{
+    width: 45px;
+    height: 45px ;
+} 
+
+.user__list a{
+    text-decoration: none;
+    display: block;
+    color:azure;
+}
+
+
+.user__list ul {
+    list-style: none;
+    font: size 0;
+}
+.user__list li {
+    color: azure;
+    background-color: black;
+    display: inline-block;
+    position:relative;
+    font-size: 18px;
+
+}
+.user__list ul ul {
+    position: absolute;
+    display: none;
+}
+.user__list ul ul li {
+    display: block;
+}
+.user__list ul li:hover ul {
+    display:block;
+}
+.logo__inicio{
+    width: 350px;
+    height: 35px;
+    margin-right: 30px;
+}
+.img__logo{
+    width:100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#list__nvbr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+nav{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: green;
+    text-decoration: none;
+}
+nav li:hover{
+    background-color: bisque;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+/* reservado para lista desplegable*/
+
+/*main*/
+
+.img__carrusel {
+    height: 300px;
+    width: 450px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    
+
+}
+.carrusel{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 30px;
+
+}
+h1{
+    padding: 50px;
+    background-color:aliceblue;
+    border-radius:5px 40px ;
+}
+
+.titulo__pagina{
+    display: flex;
+    justify-content: center
+}
+
+h3{
+    padding: 50px;
+    background-color:aliceblue;
+    border-radius:5px 40px ;
+    display: flex;
+    justify-content: center;
+}
+
+.container__clientes{
+    display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+padding: 30px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 7; }
+.div2 { grid-area: 2 / 1 / 4 / 2; }
+.div3 { grid-area: 2 / 2 / 4 / 4; }
+.div4 { grid-area: 2 / 4 / 4 / 5; }
+.div5 { grid-area: 2 / 5 / 4 / 7; }
+.div6 { grid-area: 4 / 1 / 6 / 2; }
+.div7 { grid-area: 4 / 2 / 6 / 4; }
+.div8 { grid-area: 4 / 4 / 6 / 5; }
+.div9 { grid-area: 4 / 5 / 6 / 7; }
+
+.div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8,.div9{
+    display: flex;
+    justify-content: center;
+}
+
+.container__clientes p{
+    text-align:center;
+    border: solid 5px black;
+    border-radius: 40px 20px 20px 10px;
+    width: 500px;
+    height: 100px;
+    padding: 10px;
+    background-color: rgb(253, 244, 234);
+}
+
+.container__clientes img{
+    border: 4px solid white;
+    border-radius: 10px;
+    width: 90%;
+    height: 50%;
+    background: transparent;
+}
+
+/* fotter */
+footer{
+    background-color: black;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos-redes{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.contenedor-uno ul li{
+    margin-top: 20px;
+    
+}
+
+.contenedor-dos ul li{
+    margin-top: 20px;
+}
+
+.contenedor-tres ul li{
+    margin-top: 20px;
+
+}
+
+/*registro page*/
+
+.register_sign{
+padding: 50px;
+}
+.button__signG{
+    width: 350px;
+    height: 60px;
+}
+
+#sign__google{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+}
+
+.para_button{
+    display: flex;
+    justify-content: center;
+
+}
+
+.form__regist{
+    background-color: white;
+    border-radius: 20px;
+    border: 10px white solid;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.form__regist div{
+    padding: 5px;
+    margin: 0px 70px 0px 70px
+}
+
+.nOso{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
