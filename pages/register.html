@@ -4,75 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login/register</title>
-    <link rel="stylesheet" href="../css/dc.css">
+    <title>DarknessDC</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/android-chrome-512x512.png">
     <link rel="stylesheet" href="librerias/fontawesome-free-6.2.0-web/css/all.css" name="libreria__de__iconos">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/dc.css">
 </head>
-<body>
-    <header>
-        <section class="cabecera__pagina" id="ir-a-arriba">
-            <!-- logo(inicio)-->
-            <div class="logo__inicio">
-                <a href="/index.html">
-                    <img src="../img/DarknessDCblack.png" alt="DarknessDC" class="img__logo">
-                </a>
-            </div>
-            <!-- barra de busqueda -->
-            <div class="bar__search">
-                <input type="text" name="buscar" id="buscar" placeholder="Busca tu Articulo">
-                <input type="submit" value="buscar" class="search">
-            </div>
-            <!-- login,user,chart (no terminado) -->
-            <div class="iconos">
-                <form action="../pages/register.html">
-                    <div>
-                        <button type="enviaralogin" id="login__user">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKCWHwbkATr3Vv1vVOmFnU6CPnatDigA4D1SPEhXt3hEWa_mAGdEhujlEwqPJIi0it_JM&usqp=CAU" alt="loginuser" class="iconos_contenidos">
+<body">
+    <div class="container-fluid">
+        <header id="ir-a-arriba">
+            <div class="row"> <!-- nav mobile -->
+                <div class="col-xl-12 d-block d-md-none">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a href="./carrito.html">
+                            <img src="https://gogeticons.com/frontend/web/icons/data/3/6/1/1/rounded%20shop%20cart_512.png" alt="carpng" class="mobile_cart">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../img/DCblack.png" class="logo_mobile" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
-                    </div>
-                </form>
-                <!-- lista desplegable -->
-                <div class="user__list">
-                    <ul>
-                        <li>
-                            <button class="boton__lista__usuario">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzQD2EX3lK9xnS0xdKbc_-L1t9V5dJZOJEG4v1jg5eNUdwhY0LgJguyIkTIdJdtG1jq6s&usqp=CAU" alt="userpng" class="iconos_contenidos">
-                            </button>
-                                <ul>
-                                    <li><a href="">Favoritos</a></li>
-                                    <li><a href="">Configuraion</a></li>
-                                    <li><a href="">logout</a></li>
-                                </ul>
-                        </li>
-                    </ul>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./todosLosProductos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./register.html">Login</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </nav>
                 </div>
-                <form action="../pages/carrito.html" method="get">
-                    <div>
-                        <button type="submit" id="cart__button">
-                            <img src="https://gogeticons.com/frontend/web/icons/data/3/6/1/1/rounded%20shop%20cart_512.png" alt="carpng" class="iconos_contenidos">
-                        </button>
-                    </div>
-                </form>
             </div>
-        </section>
-        <nav>
-            <!-- lista navbar -->
-            <ul id="list__nvbr">
-                <li>
-                    <a href="../pages/todosLosProductos.html">Productos</a><!-- lista desplegable a futuro -->
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="../pages/nosotros.html">Nosotros</a>
-                </li>
-                <li><a href="#pie-de-pagina">Pie de pagina</a></li> <!-- agregar foter -->
-            </ul>
-        </nav>
+            <div class="row d-flex justify-content-around" id="log_bar_s"> <!-- logo, search, user -->
+                <div class="col-md  d-none d-md-block">
+                    <a href="../index.html">
+                        <img src="../img/DarknessDCblack.png" alt="DarknessDC" class="img__logo">
+                    </a>
+                </div>
+                <div class="bar__search col-md  d-none d-md-block">
+                    <input type="text" name="buscar" id="buscar" placeholder="Busca tu Articulo">
+                    <input type="submit" value="Buscar" class="search">
+                </div>
+                <div class="iconos">
+                    <form action="./register.html" class="d-none d-md-block">
+                        <div>
+                            <button type="enviaralogin" id="login__user">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKCWHwbkATr3Vv1vVOmFnU6CPnatDigA4D1SPEhXt3hEWa_mAGdEhujlEwqPJIi0it_JM&usqp=CAU" alt="loginuser" class="iconos_contenidos">
+                            </button>
+                        </div>
+                    </form>
+                        <!-- lista desplegable -->
+                    <div class="dropdown d-none d-md-block"> <!-- bootstrap -->
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzQD2EX3lK9xnS0xdKbc_-L1t9V5dJZOJEG4v1jg5eNUdwhY0LgJguyIkTIdJdtG1jq6s&usqp=CAU" alt="userpng" class="iconos_contenidos">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Favoritos</a></li>
+                            <li><a class="dropdown-item" href="">Configuraion</a></li>
+                            <li><a class="dropdown-item" href="">logout</a></li>
+                        </ul>
+                    </div>
+                    <form action="./carrito.html" method="get" id="carrito" class="d-none d-md-block">
+                        <div>
+                            <button type="submit" id="cart__button">
+                                <img src="https://gogeticons.com/frontend/web/icons/data/3/6/1/1/rounded%20shop%20cart_512.png" alt="carpng" class="iconos_contenidos">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row"><!-- barra nav desktop -->
+                <div class="col-md  d-none d-md-block">
+                    <nav>
+                        <!-- lista navbar -->
+                        <ul id="list__nvbr">
+                            <li>
+                                <a href="./todosLosProductos.html">Productos</a>
+                            </li>
+                            <li>
+                                <a href="./contacto.html">Contacto</a>
+                            </li>
+                            <li>
+                                <a href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li><a href="#pie-de-pagina">Pie de pagina</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
         <main>
             <section class="register_sign">
                 <div class="para_button">
@@ -169,60 +204,70 @@
                 </form>
             </section>
         </main>
-        <footer id="pie-de-pagina">
-            <div class="contenedor-uno">
-                <ul>
-                    <li>
-                        <h4>SOY EL PIE DE PAGINA</h4>
-                    </li>
-                    <li>
-                        <a href="#ir-a-arriba"><h4>Ir a arriba</h4></a>
-                    </li>
-                    <li>
-                        <h4>
-                            Atencion al cliente
-                        </h4>
-                        <h4>
-                            0800-000-000
-                        </h4>
-                        <h4>
-                            ventas@darkness-dc.com.ar
-                        </h4>
-                    </li>
-                </ul>
-            </div>
-            <div class="contenedor-dos">
-                <ul>
-                    <li>
-                        <h4>¿Quieres recibir notificaciones de SORTEOS, CODIGOS, OFERTAS Y PROMOS?</h4>
-                    </li>
-                    <li>
-                        <h4>SUSCRIBETE</h4>
-                    </li>
-                    <li>
-                        <input type="text" name="putyouremail" placeholder="tu correo electronico">
-                        <input type="button" value="enviar" name="enviar">
-                    </li>
-                </ul>
-            </div>
-            <div class="contenedor-tres">
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png" alt="facelogo" class="logos-redes">
-                        </a>
-                        <a href="https://www.instagram.com/">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="inslogo" class="logos-redes">
-                        </a>
-                        <a href="https://web.whatsapp.com/">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="wsplogo" class="logos-redes">
-                        </a>
-                    </li>
-                    <li><h4>COPYRIGHT-2022</h4></li>
-                    <li><h4>DarknessDC</h4></li>
-                </ul>
+        <footer id="pie-de-pagina"><!-- fotteer -->
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="contenedor-uno">
+                        <ul>
+                            <li>
+                                <p>SOY EL PIE DE PAGINA</p>
+                            </li>
+                            <li>
+                                <a href="#ir-a-arriba"><h4>Ir a arriba</h4></a>
+                            </li>
+                            <li>
+                                <p>
+                                    Atencion al cliente
+                                </p>
+                                <p>
+                                    0800-000-000
+                                </p>
+                                <p>
+                                    ventas@darkness-dc.com.ar
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="col-xl-4">
+                        <div class="contenedor-dos">
+                            <ul>
+                                <li>
+                                    <p>¿Quieres recibir notificaciones de SORTEOS, CODIGOS, OFERTAS Y PROMOS?</p>
+                                </li>
+                                <li>
+                                    <p>SUSCRIBETE</p>
+                                </li>
+                                <li>
+                                    <input type="text" name="putyouremail" placeholder="tu correo electronico">
+                                    <input type="button" value="enviar" name="enviar">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="col-xl-4">
+                    <div class="contenedor-tres">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png" alt="facelogo" class="logos-redes">
+                                </a>
+                                <a href="https://www.instagram.com/">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="inslogo" class="logos-redes">
+                                </a>
+                                <a href="https://wa.me/541167976763?text=Hola me gustaria hacer una consulta :)" class="whatsapp" target="_blank">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" class="wsp"></img>
+                                </a>
+                            </li>
+                            <li><p>COPYRIGHT-2022</p></li>
+                            <li><p>DarknessDC</p></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </footer>
-    </header>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
