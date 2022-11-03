@@ -109,100 +109,135 @@
             </div>
         </header>
         <main>
-            <section class="register_sign">
-                <div class="para_button">
-                    <button type="submit" class="button__signG">
-                        <img src="https://app.dataslayer.ai/img/login-google.png?1633518394" alt="signgoogle" id="sign__google">
-                    </button>
-                </div>
-                <form method="post" action="js" class="form__regist">
-                    <fieldset>
-                        <legend><h2>Registro</h2></legend>
-                        <div>
-                            <input type="text" name="correo" id="mail" placeholder="correo electronico" required>
+            <div class="container px-5 my-5">
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="mb-3">
+                        <label class="form-label" for="correoElectronico">Correo electronico</label>
+                        <input class="form-control" id="correoElectronico" type="email" placeholder="Correo electronico" data-sb-validations="required,email" />
+                        <div class="invalid-feedback" data-sb-feedback="correoElectronico:required">Correo electronico is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="correoElectronico:email">Correo electronico Email is not valid.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="nombre">Nombre</label>
+                        <input class="form-control" id="nombre" type="text" placeholder="Nombre" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="nombre:required">Nombre is required.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="apellido">Apellido</label>
+                        <input class="form-control" id="apellido" type="text" placeholder="Apellido" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="apellido:required">Apellido is required.</div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
-                        <div>
-                            <input type="text" name="nombre" id="nombre_personal" placeholder="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
-                        <div>
-                            <input type="text" name="apellido" id="apellido" placeholder="apellido" required>
+                    <div class="mb-3">
+                        <label class="form-label" for="provincia">Provincia</label>
+                        <select class="form-select" id="provincia" aria-label="Provincia">
+                            <option value="Buenos aires">Buenos aires</option>
+                            <option value="Entre rios">Entre rios</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="ciudadLocalidad">Ciudad/localidad</label>
+                        <select class="form-select" id="ciudadLocalidad" aria-label="Ciudad/localidad">
+                            <option value="Ciudad 1">Ciudad 1</option>
+                            <option value="Ciudad 2">Ciudad 2</option>
+                            <option value="Ciudad">Ciudad</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="codigoPostal">Codigo postal</label>
+                        <input class="form-control" id="codigoPostal" type="text" placeholder="Codigo postal" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="codigoPostal:required">Codigo postal is required.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="domicilio">Domicilio</label>
+                        <input class="form-control" id="domicilio" type="text" placeholder="Domicilio" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="domicilio:required">Domicilio is required.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="depto">Depto</label>
+                        <input class="form-control" id="depto" type="text" placeholder="Depto" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="depto:required">Depto is required.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="piso">Piso</label>
+                        <input class="form-control" id="piso" type="text" placeholder="Piso" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="piso:required">Piso is required.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="tipoDeDocumento">Tipo de Documento</label>
+                        <select class="form-select" id="tipoDeDocumento" aria-label="Tipo de Documento">
+                            <option value="D.N.I">D.N.I</option>
+                            <option value="C.L">C.L</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="numeroDeDocumento">Numero de documento</label>
+                        <input class="form-control" id="numeroDeDocumento" type="text" placeholder="Numero de documento" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="numeroDeDocumento:required">Numero de documento is required.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label d-block">sexo</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Mujer
+                            </label>
                         </div>
-                        <div>
-                            <input type="text" name="apellido" id="pass" placeholder="password" required>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                            Hombre
+                            </label>
                         </div>
-                        <div>
-                            <input type="text" name="apellido" id="repetir" placeholder="password_repeat" required>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                            <label class="form-check-label" for="flexRadioDefault3">
+                            Otro
+                            </label>
                         </div>
-                        <div>
-                            <label for="provincias">Provincia</label>
-                                <select name="talle" id="talle">
-                                    <option value="1">Buenos Aires</option>
-                                    <option value="2">Santa Fe</option>
-                                    <option value="3">Entre Rios</option>
-                                    <option value="4">La Pampa</option>
-                                    <option value="5">Misiones</option>
-                                    <option value="6">Otras provincias</option>
-                                </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="numeroDeTelefono">Numero de telefono</label>
+                        <input class="form-control" id="numeroDeTelefono" type="text" placeholder="Numero de telefono" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="numeroDeTelefono:required">Numero de telefono is required.</div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" id="aceptoTerrminosYCondiciones" type="checkbox" name="aceptoTerrminosYCondiciones" />
+                            <label class="form-check-label" for="aceptoTerrminosYCondiciones">Acepto terrminos y condiciones</label>
                         </div>
-                        <div>
-                            <label for="ciudad">Ciudad</label>
-                                <select name="talle" id="talle">
-                                    <option value="1">una ciudad</option>
-                                    <option value="2">otra city</option>
-                                    <option value="3">otra</option>
-                                    <option value="4">city center</option>
-                                </select>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            <p>To activate this form, sign up at</p>
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                         </div>
-                        <div>
-                            <label for="cp">Codigo postal</label>
-                            <input type="text" name="postal" id="postal" placeholder="N°" required>
-                        </div>
-                        <div>
-                            <label for="calle">calle</label>
-                            <input type="text" name="calle" id="calle" placeholder="calle" required>
-                        </div>
-                        <div>
-                            <label for="depto">Depto</label>
-                            <input type="text" name="Depto" id="depto" placeholder="N°" required>
-                        </div>
-                        <div>
-                            <label for="piso">Piso</label>
-                            <input type="number" name="piso" id="piso" placeholder="N°" required>
-                        </div>
-                        <div>
-                            <label for="doc">Tipo de Documento</label>
-                                <select name="talle" id="talle">
-                                    <option value="1">D.N.I</option>
-                                    <option value="2">C.L</option>
-                                    <option value="3">Otro</option>
-                                </select>
-                        </div>
-                        <div>
-                            <input type="text" name="number" id="number:doc" placeholder="N°" required>
-                        </div>
-                        <div>
-                            <label for="sexo">Sexo</label>
-                            <div>
-                                <label for="hombre">hombre</label>
-                                <input type="radio" name="sexo" id="hombre">
-                                <label for="mujer">mujer</label>
-                                <input type="radio" name="sexo" id="mujer">
-                            </div>
-                        </div>
-                        <div>
-                            <label for="numbertel">Numero de telefono</label>
-                            <input type="text" name="numbero" id="tel_number" placeholder="N°" required>
-                        </div>
-                        <div>
-                            <label for="terminos">acepto terminos y condiciones</label>
-                            <input type="checkbox" name="checkbox" id="terminos">
-                        </div>
-                        <div>
-                            <input type="submit" name="enviar" id="enviar">
-                        </div>
-                    </fieldset>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                    </div>
                 </form>
-            </section>
+            </div>
+            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         </main>
         <footer id="pie-de-pagina"><!-- fotteer -->
             <div class="row">
