@@ -1,0 +1,20 @@
+@import "../utilities/_VarFunMix.scss";
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    
+    .login-form {
+        margin: 10px 0px 10px 0px;
+    }
+    a{
+        @include link-style;
+        color: $color-white;
+    }
+    #contactForm{
+        width: 400px;
+        padding: 10px;
+        @extend  %cajitaDC;
+    }
+}
+

@@ -1,0 +1,13 @@
+@import "../utilities/VarFunMix";
+
+h1{
+    @include titulos-cajita;
+    text-align: center;
+}
+
+.nosotros-proyeccion{
+    @include titulos-cajita;
+} h2{
+    text-align: center;
+    margin-top: 40px;
+}

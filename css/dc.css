@@ -1,317 +1,467 @@
-*{
-    margin: 0;
-    padding: 0;
-
+/*variables*/
+/*mixins*/
+/*fase Beta*/
+.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img {
+  border-right: 5px solid rgba(243, 22, 255, 0.6);
+  border-left: 5px solid rgba(0, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px 15px 15px 15px !important;
 }
 
+/*variables*/
+/*mixins*/
+/*fase Beta*/
+.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img, .navbar {
+  border-right: 5px solid rgba(243, 22, 255, 0.6);
+  border-left: 5px solid rgba(0, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px 15px 15px 15px !important;
+}
+
+/*IMPORTANTE*/
+/*tuve un problema con el @use, sass no reconoce las variables que se encuentran en otros archivos y como coder ask no dio respuesta opte por pasar a @import en la cual se dio resuelto el problema*/
 /*navbar mobile*/
-.logo_mobile{
-    width: 30px;
-    height: 30px;
+/*lista deplegable del user*/
+/*nav*/
+.navbar .mobile_cart {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
 }
-
-.mobile_cart{
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
+.navbar .logo_mobile {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
 }
-
-body {
-    font-family: sans-serif;
-    color: white;
-    position: relative;
-    border-radius: 10px;
-    background-color: transparent;
+.navbar li {
+  margin-left: 10px;
 }
-
-body::before {
-    content: '';
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    filter: blur(4px);
-    z-index: -1;
+.navbar button {
+  margin-right: 10px;
+  color: black !important;
+  border-color: black !important;
+}
+.navbar form {
+  margin-left: 10px;
 }
 
 #log_bar_s {
-    padding: 20px;
+  padding: 10px;
+}
+#log_bar_s .img__logo {
+  width: 420px;
+  height: 60px;
+  border: 3px solid white transparent;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px black;
 }
 
-
-.logo__inicio {
-    width: 600px;
-    height:70px;
-    
+.bar__search {
+  height: 75px;
+  width: 450px;
+}
+.bar__search #buscar {
+  width: 300px;
+  height: 40px;
+  border: transparent solid 3px;
+  border-radius: 40px;
+  box-shadow: 10px 10px 5px black;
+  margin-top: 10px;
+}
+.bar__search .search {
+  width: 90px;
+  height: 33px;
+  border: transparent solid 5px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px black;
 }
 
-.img__logo {
-    width: 420px;
-    height: 60px;
-    border: 3px solid white transparent;
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px black;
+.iconos {
+  display: flex;
+  width: auto;
+  padding: 10px;
 }
-
-
-.bar__search{
-    height: 75px;
-    width: 450px;
-
+.iconos button {
+  border: 3px transparent solid;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px black;
+  margin-right: 2px;
 }
-
-#buscar {
-    width: 300px;
-    height: 40px;
-    border: transparent solid 3px;
-    border-radius: 40px;
-    box-shadow: 10px 10px 5px black;
-}
-
-.search {
-    width: 90px;
-    height: 33px;
-    border: transparent solid 5px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 5px black;
-}
-
-.iconos { 
-    display:flex;
-    width: auto;
-}
-
 
 .iconos_contenidos {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
-.iconos form{
-    width: 60px;
-    height: 60px;
+.dropdown {
+  width: 60px;
+  height: 60px;
 }
 
-.dropdown{
-    width: 60px;
-    height: 60px;
-}
-
-#carrito{
-    width: 60px;
-    height: 60px;
-    margin-left: 22px;
-}
-
-
-.iconos button{
-    border: 3px transparent solid;
-    border-radius: 5px;
-    box-shadow: 10px 10px 5px black;
+#carrito {
+  width: 60px;
+  height: 60px;
+  margin-left: 13px;
+  z-index: 0;
 }
 
 .btn-secondary {
-    color: rgb(0, 0, 0);
-    background-color: #fffefe;
-    border-color: #6c757d;
-    padding: 0px;
+  color: black;
+  background-color: #fff;
+  border-color: #6c757d;
+  padding: 0px;
+  width: 70px;
+  height: 58px;
 }
 
-.dropdown-menu{
-    background: #000000;
+.dropdown-menu {
+  background: black;
 }
 
-.dropdown-item{
-    color: white;
+.dropdown-item {
+  color: #fff;
 }
-
-
-/*lista deplegable del user*/
-.user__list a{
-    text-decoration: none;
-    display: block;
-    color:azure;
-}
-
-
-.user__list ul {
-    list-style: none;
-    padding: 0px;
-}
-
-.user__list li {
-    background-color: transparent;
-    display: inline-block;
-    position:relative;
-    font-size: 18px;
-
-}
-.user__list ul ul {
-    position: absolute;
-    display: none;
-}
-.user__list ul ul li {
-    display: block;
-    z-index: 1;
-}
-.user__list ul li:hover ul {
-    display:block;
-}
-
-
-/*nav*/
 
 #list__nvbr {
-    display: flex;
-    justify-content: space-evenly;
-	border-radius: 25px;
-	height: fit-content;
-	background-color: rgba(0, 0, 0, .4);
-	-webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);  
-	align-items: center;
-    padding: 7px;
-    box-shadow: 10px 10px 12px black;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 25px;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  padding: 7px;
+  box-shadow: 10px 10px 12px black;
 }
-
 #list__nvbr li {
-	list-style: none;
-	color: white;
-	font-family: sans-serif;
-	font-weight: bold;
-    font-size: 130%;
-	padding: 12px 16px;
-	margin: 0 8px;
-	position: relative;
-	cursor: pointer;
-	white-space: nowrap;
-
+  list-style: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 130%;
+  padding: 12px 16px;
+  margin: 0 8px;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
 }
-#list__nvbr li a{
-    text-decoration: none;
+#list__nvbr li a {
+  text-decoration: none;
 }
-
 #list__nvbr li::before {
-	content: " ";
-	position: absolute;
-	top: 0;
-	left:0;
-	height:100%;
-	width: 100%;
-	z-index:-1;
-	transition: .3s;
-	border-radius: 25px;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.3s;
+  border-radius: 25px;
 }
-
 #list__nvbr li:hover {
-    color: black;
+  color: black;
 }
-
 #list__nvbr li:hover::before {
-    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
-    box-shadow: 0px 3px 20px 0px black;
-    transform: scale(1.2);
+  background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+  box-shadow: 0px 3px 20px 0px black;
+  transform: scale(1.2);
 }
 
-
-/*main*/
-
-.carrusel-de-img{
-    display: flex;
-    justify-content: center;
+/*variables*/
+/*mixins*/
+/*fase Beta*/
+.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img {
+  border-right: 5px solid rgba(243, 22, 255, 0.6);
+  border-left: 5px solid rgba(0, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px 15px 15px 15px !important;
 }
 
-
-#carouselExampleInterval{
-    width: 1000px;
-    min-height: 200px;
-    height: auto;
-    max-height: 500px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 10px 10px 12px black;
-}
-
-
-.img__carrusel {
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-item{
-    width: 100%;
-    height: 100%;
-
-}
-
-.perfil{
-    display: contents;
-}
-
-.client{
-    margin-top: 40px;
-    width: 100px;
-    height: 90px;
-    border-radius: 50%;
-    border: #FFF 2px solid;
-    
-}
-
-/* fotter */
 footer {
-    background-color: rgba(0, 0, 0, 0.616);
-    color: white;
-    padding: 40px;
-    display: flex;
-    justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.616);
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.logos-redes{
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
+.logos-redes {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
 }
 
-.contenedor-uno ul li{
-    margin-top: 20px;
-    list-style: none;
+.contenedor-uno ul li {
+  margin-top: 20px;
+  list-style: none;
+}
+.contenedor-uno ul li a {
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: #000000 3px 3px 2px;
 }
 
-.contenedor-uno ul li a{
-    outline: none;
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    text-shadow: #000000 3px 3px 2px;
-
-}
-.contenedor-dos ul li{
-    margin-top: 20px;
-    list-style: none;
-    
+.contenedor-dos ul li {
+  margin-top: 20px;
+  list-style: none;
 }
 
-.contenedor-tres ul li{
-    margin-top: 20px;
-    list-style: none;
+.contenedor-tres ul li {
+  margin-top: 20px;
+  list-style: none;
 }
 
-.whatsapp{
-    position:fixed;
-    width:70px;
-    height:70px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index: index 5;
+.whatsapp {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: index 5;
 }
 
 .wsp {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
+/*variables*/
+/*mixins*/
+/*fase Beta*/
+.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img, .Productos_varios #card_p {
+  border-right: 5px solid rgba(243, 22, 255, 0.6);
+  border-left: 5px solid rgba(0, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px 15px 15px 15px !important;
+}
+
+.Productos_varios {
+  text-align-last: justify;
+}
+.Productos_varios #card_p {
+  width: 250px;
+  height: 300px;
+  padding: 0.8em;
+  background: rgba(0, 0, 0, 0.616);
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: inline-table;
+  margin: 20px;
+}
+.Productos_varios #card_p .card-img {
+  background-color: #ffcaa6;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+.Productos_varios #card_p .card-img .img_product {
+  height: 100%;
+  width: 100%;
+}
+
+.card-info {
+  padding-top: 10%;
+  width: -webkit-fill-available;
+}
+.card-info .text-body {
+  color: #fff !important;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+/*variables*/
+/*mixins*/
+/*fase Beta*/
+.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img, .container-form #contactForm {
+  border-right: 5px solid rgba(243, 22, 255, 0.6);
+  border-left: 5px solid rgba(0, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px 15px 15px 15px !important;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+}
+.container-form .login-form {
+  margin: 10px 0px 10px 0px;
+}
+.container-form a {
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+.container-form #contactForm {
+  width: 400px;
+  padding: 10px;
+}
+
+/*variables*/
+/*mixins*/
+/*fase Beta*/
+.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img, .site iframe, .site h3 {
+  border-right: 5px solid rgba(243, 22, 255, 0.6);
+  border-left: 5px solid rgba(0, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px 15px 15px 15px !important;
+}
+
+/*los formularios se encuentranen partials _forms.scss*/
+.site h3 {
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+.site .mapa {
+  text-align: center;
+}
+.site iframe {
+  width: -webkit-fill-available;
+  max-width: 600px;
+}
+
+/*variables*/
+/*mixins*/
+/*fase Beta*/
+.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img, .nosotros-proyeccion, h1 {
+  border-right: 5px solid rgba(243, 22, 255, 0.6);
+  border-left: 5px solid rgba(0, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px 15px 15px 15px !important;
+}
+
+h1 {
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.nosotros-proyeccion {
+  padding: 10px;
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/*variables*/
+/*mixins*/
+/*fase Beta*/
+.noso img, .contenedor-clientes, .titulo_clientes, .titulo__pagina {
+  border-right: 5px solid rgba(243, 22, 255, 0.6);
+  border-left: 5px solid rgba(0, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px 15px 15px 15px !important;
+}
+
+/*IMPORTANTE*/
+/*tuve un problema con el @use, sass no reconoce las @use, @extend que se encuentran en otros archivos y como coder ask no dio respuesta opte por pasar a @import en la cual se dio resuelto el problema*/
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+  position: relative;
+  border-radius: 10px;
+  background-color: black;
+}
+body::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.titulo__pagina {
+  padding: 10px;
+  margin: 20px;
+}
+.titulo__pagina h1 {
+  display: contents;
+}
+
+.carrusel-de-img {
+  display: flex;
+  justify-content: center;
+}
+.carrusel-de-img #carouselExampleInterval {
+  width: 1000px;
+  min-height: 200px;
+  height: auto;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 10px 10px 12px black;
+}
+.carrusel-de-img #carouselExampleInterval .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.carrusel-de-img #carouselExampleInterval .img__carrusel {
+  width: 100%;
+  height: 100%;
+}
+
+.container-card {
+  padding: 50px;
+}
+
+.titulo_clientes {
+  padding: 10px;
+  margin: 20px;
+}
+.titulo_clientes h3 {
+  text-align-last: center;
+  -webkit-text-stroke-width: thick;
+}
+
+.contenedor-clientes .perfil {
+  display: contents;
+}
+.contenedor-clientes .client {
+  margin: 40px 0px 0px 10px;
+  width: 100px;
+  height: 90px;
+  border-radius: 50%;
+  border: #FFF 2px solid;
+}
+
+/*logodenosotros*/
+.noso img {
+  width: -webkit-fill-available;
+}
+
+/*# sourceMappingURL=dc.css.map */

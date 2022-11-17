@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Los mejores productos e insumos de indormatica, para la oficina o el hogar">
+    <meta name="description" content="inicia sesion y adrquiere nuestros productos">
     <meta name="keywords" content="compra, electronica, messi, pc, pc gamer, mouse, teclado, rgb, cooler, placa de video, audio, video, auriculares, gamin, oficce, minitores, hz, ">
-    <title>DarknessDC</title>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <title>login</title>
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/android-chrome-512x512.png">
     <link rel="stylesheet" href="librerias/fontawesome-free-6.2.0-web/css/all.css" name="libreria__de__iconos">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/dc.css">
+    <link rel="stylesheet" href="../css/dc.css">
 </head>
 <body">
     <div class="container-fluid">
@@ -21,10 +22,10 @@
             <div class="row"> <!-- nav mobile -->
                 <div class="col-xl-12 d-block d-md-none">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a href="./pages/carrito.html">
+                        <a href="./carrito.html">
                             <img src="https://gogeticons.com/frontend/web/icons/data/3/6/1/1/rounded%20shop%20cart_512.png" alt="carpng" class="mobile_cart">
-                        <a class="navbar-brand" href="./index.html">
-                            <img src="./img/DCblack.png" class="logo_mobile" alt="logo_mobile">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../img/DCblack.png" class="logo_mobile" alt="logo_mobile">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -32,16 +33,16 @@
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="./pages/todosLosProductos.html">Productos</a>
+                                    <a class="nav-link active" aria-current="page" href="./todosLosProductos.html">Productos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="./pages/login.html">Login</a>
+                                    <a class="nav-link active" aria-current="page" href="./login.html">Login</a>
                                 </li>
                             </ul>
                             <form class="d-flex" role="search">
@@ -54,7 +55,7 @@
             </div>
             <div class="row d-flex justify-content-around" id="log_bar_s"> <!-- logo, search, user -->
                 <div class="col-md  d-none d-md-block">
-                    <a href="/index.html">
+                    <a href="../index.html">
                         <img src="../img/DarknessDCblack.png" alt="DarknessDC" class="img__logo">
                     </a>
                 </div>
@@ -63,7 +64,7 @@
                     <input type="submit" value="Buscar" class="search">
                 </div>
                 <div class="iconos">
-                    <form action="./pages/login.html" class="d-none d-md-block">
+                    <form action="./login.html" class="d-none d-md-block">
                         <div>
                             <button type="enviaralogin" id="login__user">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKCWHwbkATr3Vv1vVOmFnU6CPnatDigA4D1SPEhXt3hEWa_mAGdEhujlEwqPJIi0it_JM&usqp=CAU" alt="loginuser" class="iconos_contenidos">
@@ -81,7 +82,7 @@
                             <li><a class="dropdown-item" href="">logout</a></li>
                         </ul>
                     </div>
-                    <form action="./pages/carrito.html" method="get" id="carrito" class="d-none d-md-block">
+                    <form action="./carrito.html" method="get" id="carrito" class="d-none d-md-block">
                         <div>
                             <button type="submit" id="cart__button">
                                 <img src="https://gogeticons.com/frontend/web/icons/data/3/6/1/1/rounded%20shop%20cart_512.png" alt="carpng" class="iconos_contenidos">
@@ -96,13 +97,13 @@
                         <!-- lista navbar -->
                         <ul id="list__nvbr">
                             <li>
-                                <a href="./pages/todosLosProductos.html">Productos</a>
+                                <a href="./todosLosProductos.html">Productos</a>
                             </li>
                             <li>
-                                <a href="./pages/contacto.html">Contacto</a>
+                                <a href="./contacto.html">Contacto</a>
                             </li>
                             <li>
-                                <a href="./pages/nosotros.html">Nosotros</a>
+                                <a href="./nosotros.html">Nosotros</a>
                             </li>
                             <li><a href="#pie-de-pagina">Pie de pagina</a></li>
                         </ul>
@@ -110,106 +111,56 @@
                 </div>
             </div>
         </header>
-        <main>
-            <div class="row"><!-- main -->
-                <div class="col-xl-12">
-                    <div class="titulo__pagina">
-                        <h1>BIENVENIDOS</h1>
+        <main class="container-form">
+            <section id="contactForm">
+                <h1>login</h1>
+                <form class="login-form">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control" id="validationTooltip01" aria-describedby="emailHelp" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                        <div id="emailHelp" class="form-text">Por su seguridad no comparta informacion.</div>
                     </div>
-                    <section><!-- boots carrusel de img -->
-                        <div class="carrusel-de-img">
-                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="2000">
-                                        <img src="./img/amdimg.jpg" class="img__carrusel" alt="amd">
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="./img/pcgamer.jpg" class="img__carrusel" alt="pcgamer">
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="./img/intel13thgen.jpg" class="img__carrusel" alt="intel13thgen">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Anterior</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Siguiente</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="titulo_clientes"> <!-- cards clientes satisfechos -->
-                            <h3>Nuestros clientes</h3>
-                        </div>
-                        <div class="row container-card">
-                            <div class="col-md-6">
-                                <div class="card mb-3 bg-dark" style="max-width: 680px;">
-                                    <div class="row g-0 contenedor-clientes">
-                                        <div class="col-md-4 perfil">
-                                            <img src="./img/personas/persona 1.jfif" class="client" alt="persona">
-                                        </div>
-                                        <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Desiree Puente</h5>
-                                            <p class="card-text">Buenas tardes. Es la primera vez que compro de forma on line, fueron muy claros y el pedido llego en tiempo y forma. Muchas gracias.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card mb-3 bg-dark" style="max-width: 680px;">
-                                    <div class="row g-0 contenedor-clientes">
-                                        <div class="col-md-4 perfil">
-                                            <img src="./img/personas/persona 2.jfif" class="client" alt="persona">
-                                        </div>
-                                        <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Juliana Delgado</h5>
-                                            <p class="card-text">Queria agradecerles ya que mas alla de haber tenido un inconveniente con el envio ustedes me dieron una solucion de inmediato..</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card mb-3 bg-dark" style="max-width: 680px;">
-                                    <div class="row g-0 contenedor-clientes">
-                                        <div class="col-md-4 perfil">
-                                            <img src="./img/personas/persona 3.jfif" class="client" alt="persona">
-                                        </div>
-                                        <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Jon Alcantara</h5>
-                                            <p class="card-text">Gracias por resolver todas mis dudas, la atencion via whatsapp es excelente. Sin dudas los tendre en cuenta para proximas compras..</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card mb-3 bg-dark" style="max-width: 680px;">
-                                    <div class="row g-0 contenedor-clientes">
-                                        <div class="col-md-4 perfil">
-                                            <img src="./img/personas/persona 4.jfif" class="client" alt="persona">
-                                        </div>
-                                        <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Abdeslam Ribas</h5>
-                                            <p class="card-text">Pude conseguir lo que deseaba gracias a su amplia variedad de productos y las posibilidades de pago. Gracias por todo.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">No soy un bot</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-success">Ingresar</button>
+                    <button type="button" class="btn btn-primary btn-info register-btn">
+                        <a href="./register.html">Register</a>
+                    </button>
+                    </form>
+                <div class="buttonGoogle">
+                    <div id="my-signin2"></div>
+                    <script>
+                        function onSuccess(googleUser) {
+                            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                        }
+                        function onFailure(error) {
+                        console.log(error);
+                        }
+                        function renderButton() {
+                        gapi.signin2.render('my-signin2', {
+                            'scope': 'profile email',
+                            'width': 240,
+                            'height': 50,
+                            'longtitle': true,
+                            'theme': 'dark',
+                            'onsuccess': onSuccess,
+                            'onfailure': onFailure
+                        });
+                    }
+                    </script>
                 </div>
-            </div>
+            </section>
         </main>
-        <footer id="pie-de-pagina" class="pie"><!-- fotteer -->
+        <footer id="pie-de-pagina"><!-- fotteer -->
             <div class="row">
                 <div class="col-xl-4">
                     <div class="contenedor-uno">
@@ -272,6 +223,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>

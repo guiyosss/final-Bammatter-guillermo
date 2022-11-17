@@ -1,0 +1,41 @@
+
+/*variables*/
+
+$font-gen: sans-serif;
+$color-white: #fff ;
+$color-black: black;
+$bg-color-black: rgba(0, 0, 0, 0.616);
+
+$box-shadow: 10px 10px 5px black;
+
+
+
+/*mixins*/
+
+@mixin link-style {
+    outline: none;
+	list-style: none;
+	text-decoration: none;
+}
+
+@mixin titulos-cajita {
+    @extend  %cajitaDC;
+	padding: 10px;
+	margin: 20px;
+}
+
+
+@mixin size ($width, $height){
+    width: $width;
+    height: $height ;
+}
+
+/*fase Beta*/
+%cajitaDC {
+    border-right: 5px solid rgb(243 22 255 / 60%);
+    border-left: 5px solid rgb(0 255 255 / 60%);
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px 15px 15px 15px !important;
+}
+
+
