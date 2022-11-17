@@ -1,7 +1,7 @@
 /*variables*/
 /*mixins*/
 /*fase Beta*/
-.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img {
+.titulo_clientes, .contenedor-clientes, .noso img {
   border-right: 5px solid rgba(243, 22, 255, 0.6);
   border-left: 5px solid rgba(0, 255, 255, 0.6);
   background: rgba(0, 0, 0, 0.4);
@@ -11,7 +11,7 @@
 /*variables*/
 /*mixins*/
 /*fase Beta*/
-.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img, .navbar {
+.titulo_clientes, .contenedor-clientes, .noso img, .navbar {
   border-right: 5px solid rgba(243, 22, 255, 0.6);
   border-left: 5px solid rgba(0, 255, 255, 0.6);
   background: rgba(0, 0, 0, 0.4);
@@ -172,7 +172,7 @@
 /*variables*/
 /*mixins*/
 /*fase Beta*/
-.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img {
+.titulo_clientes, .contenedor-clientes, .noso img {
   border-right: 5px solid rgba(243, 22, 255, 0.6);
   border-left: 5px solid rgba(0, 255, 255, 0.6);
   background: rgba(0, 0, 0, 0.4);
@@ -237,7 +237,7 @@ footer {
 /*variables*/
 /*mixins*/
 /*fase Beta*/
-.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img, .Productos_varios #card_p {
+.titulo_clientes, .contenedor-clientes, .noso img, .Productos_varios #card_p {
   border-right: 5px solid rgba(243, 22, 255, 0.6);
   border-left: 5px solid rgba(0, 255, 255, 0.6);
   background: rgba(0, 0, 0, 0.4);
@@ -296,7 +296,7 @@ svg {
 /*variables*/
 /*mixins*/
 /*fase Beta*/
-.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img, .container-form #contactForm {
+.titulo_clientes, .contenedor-clientes, .noso img, .container-form #contactForm {
   border-right: 5px solid rgba(243, 22, 255, 0.6);
   border-left: 5px solid rgba(0, 255, 255, 0.6);
   background: rgba(0, 0, 0, 0.4);
@@ -324,7 +324,7 @@ svg {
 /*variables*/
 /*mixins*/
 /*fase Beta*/
-.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img, .site iframe, .site h3 {
+.titulo_clientes, .contenedor-clientes, .noso img, .site iframe, .site h3 {
   border-right: 5px solid rgba(243, 22, 255, 0.6);
   border-left: 5px solid rgba(0, 255, 255, 0.6);
   background: rgba(0, 0, 0, 0.4);
@@ -348,7 +348,7 @@ svg {
 /*variables*/
 /*mixins*/
 /*fase Beta*/
-.titulo__pagina, .titulo_clientes, .contenedor-clientes, .noso img, .nosotros-proyeccion, h1 {
+.titulo_clientes, .contenedor-clientes, .noso img, .nosotros-proyeccion, h1 {
   border-right: 5px solid rgba(243, 22, 255, 0.6);
   border-left: 5px solid rgba(0, 255, 255, 0.6);
   background: rgba(0, 0, 0, 0.4);
@@ -374,7 +374,7 @@ h2 {
 /*variables*/
 /*mixins*/
 /*fase Beta*/
-.noso img, .contenedor-clientes, .titulo_clientes, .titulo__pagina {
+.noso img, .contenedor-clientes, .titulo_clientes {
   border-right: 5px solid rgba(243, 22, 255, 0.6);
   border-left: 5px solid rgba(0, 255, 255, 0.6);
   background: rgba(0, 0, 0, 0.4);
@@ -403,14 +403,6 @@ body::before {
   position: absolute;
   filter: blur(4px);
   z-index: -1;
-}
-
-.titulo__pagina {
-  padding: 10px;
-  margin: 20px;
-}
-.titulo__pagina h1 {
-  display: contents;
 }
 
 .carrusel-de-img {
@@ -445,7 +437,6 @@ body::before {
 }
 .titulo_clientes h3 {
   text-align-last: center;
-  -webkit-text-stroke-width: thick;
 }
 
 .contenedor-clientes .perfil {
@@ -460,8 +451,5 @@ body::before {
 }
 
 /*logodenosotros*/
-.noso img {
-  width: -webkit-fill-available;
-}
 
 /*# sourceMappingURL=dc.css.map */

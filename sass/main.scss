@@ -41,12 +41,7 @@ body {
 	}
 }
 
-.titulo__pagina{
-	@include titulos-cajita;
-	h1{
-		display: contents;
-	}
-}
+
 
 .carrusel-de-img {
 	display: flex;
@@ -80,7 +75,6 @@ body {
 	@include titulos-cajita;
 	h3 {
 	text-align-last: center;
-    -webkit-text-stroke-width: thick;
 	}
 }
 
@@ -105,7 +99,6 @@ body {
 .noso{
 	img {
 		@extend  %cajitaDC;
-		width: -webkit-fill-available;
 	}
 	
 }
