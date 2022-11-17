@@ -451,5 +451,8 @@ body::before {
 }
 
 /*logodenosotros*/
+.noso img {
+  width: -webkit-fill-available;
+}
 
 /*# sourceMappingURL=dc.css.map */

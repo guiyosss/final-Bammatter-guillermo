@@ -99,6 +99,7 @@ body {
 .noso{
 	img {
 		@extend  %cajitaDC;
+		width: -webkit-fill-available;
 	}
 	
 }
