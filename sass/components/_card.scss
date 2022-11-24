@@ -1,40 +1,38 @@
 @import "../utilities/VarFunMix";
 
-.Productos_varios {
-	text-align-last: justify;
-	#card_p {
-		width: 250px;
-		height: 300px;
-		padding: .8em;
-		background: $bg-color-black;
-		position: relative;
-		overflow: visible;
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		display: inline-table;
-		margin: 20px;
+
+#card_p {
+	width: 250px;
+	height: 300px;
+	padding: .8em;
+	background: $bg-color-black;
+	position: relative;
+	overflow: visible;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	display: inline-table;
+	margin: 20px;
+	@extend  %cajitaDC;
+	.card-img {
+		background-color:  #ffcaa6;
+		height: 100%;
+		width: 100%;
+		border-radius: .5rem;
+		transition: .3s ease;
 		@extend  %cajitaDC;
-		.card-img {
-			background-color:  #ffcaa6;
+		overflow: hidden;
+		
+		&:hover {
+			transform: translateY(-30%);
+			box-shadow: rgb(255, 255, 255) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+		}
+		.img_product {
 			height: 100%;
 			width: 100%;
-			border-radius: .5rem;
-			transition: .3s ease;
-			@extend  %cajitaDC;
 			overflow: hidden;
-
-			&:hover {
-				transform: translateY(-30%);
-				box-shadow: rgb(255, 255, 255) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
-			}
-			.img_product {
-				height: 100%;
-				width: 100%;
-				overflow: hidden;
-			}
-			
+		}
 		}
 	}
-}
+
 
 
 
