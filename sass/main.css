@@ -126,6 +126,8 @@
   display: flex;
   justify-content: space-evenly;
   border-radius: 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(10px);
@@ -245,7 +247,8 @@ footer {
 }
 
 .Productos_varios {
-  text-align-last: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
 }
 .Productos_varios #card_p {
   width: 250px;
@@ -442,7 +445,8 @@ body::before {
   margin: 20px;
 }
 .titulo_clientes h3 {
-  text-align-last: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
 }
 
 .contenedor-clientes .perfil {
@@ -459,6 +463,4 @@ body::before {
 /*logodenosotros*/
 .noso img {
   width: -webkit-fill-available;
-}
-
-/*# sourceMappingURL=dc.css.map */
+}/*# sourceMappingURL=main.css.map */

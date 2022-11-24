@@ -19,10 +19,19 @@
 			width: 100%;
 			border-radius: .5rem;
 			transition: .3s ease;
+			@extend  %cajitaDC;
+			overflow: hidden;
+
+			&:hover {
+				transform: translateY(-30%);
+				box-shadow: rgb(255, 255, 255) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+			}
 			.img_product {
 				height: 100%;
 				width: 100%;
+				overflow: hidden;
 			}
+			
 		}
 	}
 }
