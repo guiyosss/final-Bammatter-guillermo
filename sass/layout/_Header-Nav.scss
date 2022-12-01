@@ -10,10 +10,11 @@
 
 .navbar{
 	@extend %cajitaDC;
+	flex-direction: row-reverse;
 	.mobile_cart {
 		width: 30px;
 		height: 30px;
-		margin-left: 10px;
+		margin-right: 10px;
 	}
 	.logo_mobile {
 		width: 30px;
@@ -24,7 +25,7 @@
 		margin-left: 10px;
 	}
 	button{
-		margin-right: 10px;
+		margin: 0px 10px;
 		color: $color-black !important;
 		border-color: $color-black !important;
 	}
@@ -32,7 +33,7 @@
 		margin-left: 10px;
 	}
 }
-#log_bar_s {
+#log_bar_s { /*logo de inicio*/
 	padding: 10px;
 	.img__logo {
 		width: 420px;

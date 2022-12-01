@@ -8,11 +8,7 @@ footer {
 	display: flex;
 	justify-content: space-around;
 }
-.logos-redes {
-	width: 100px;
-	height: 100px;
-	margin-left: 20px;
-}
+
 .contenedor-uno {
 	ul {
 		li {
@@ -22,8 +18,7 @@ footer {
 				outline: none;
 				list-style: none;
 				text-decoration: none;
-				color: 
-$color-white;
+				color: $color-white;
 				text-shadow: #000000 3px 3px 2px;
 			}
 		}
@@ -42,23 +37,29 @@ $color-white;
 		li {
 			margin-top: 20px;
 			list-style: none;
+			.logos-redes {
+				width: 60px;
+				height: 60px;
+				margin-left: 20px;
+			}
+			.whatsapp {
+				position: fixed;
+				width: 70px;
+				height: 70px;	
+				bottom: 40px;
+				right: 40px;
+				border-radius: 50px;
+				&:hover {
+					transform: translateY(-20%);
+				}
+				.wsp {
+					width: 100%;
+					height: 100%;
+					
+
+				}
+			}
 		}
 	}
 }
-.whatsapp {
-	position: fixed;
-	width: 70px;
-	height: 70px;	
-	bottom: 40px;
-	right: 40px;
-	background-color:#25d366;
-	color:	$color-white;
-	border-radius: 50px;
-	text-align: center;
-	font-size: 30px;
-	z-index: index 5;
-}
-.wsp {
-	width: 100%;
-	height: 100%;
-}
+

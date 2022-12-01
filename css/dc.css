@@ -23,10 +23,13 @@
 /*navbar mobile*/
 /*lista deplegable del user*/
 /*nav*/
+.navbar {
+  flex-direction: row-reverse;
+}
 .navbar .mobile_cart {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .navbar .logo_mobile {
   width: 30px;
@@ -37,7 +40,7 @@
   margin-left: 10px;
 }
 .navbar button {
-  margin-right: 10px;
+  margin: 0px 10px;
   color: black !important;
   border-color: black !important;
 }
@@ -45,7 +48,7 @@
   margin-left: 10px;
 }
 
-#log_bar_s {
+#log_bar_s { /*logo de inicio*/
   padding: 10px;
 }
 #log_bar_s .img__logo {
@@ -187,12 +190,6 @@ footer {
   justify-content: space-around;
 }
 
-.logos-redes {
-  width: 100px;
-  height: 100px;
-  margin-left: 20px;
-}
-
 .contenedor-uno ul li {
   margin-top: 20px;
   list-style: none;
@@ -214,22 +211,23 @@ footer {
   margin-top: 20px;
   list-style: none;
 }
-
-.whatsapp {
+.contenedor-tres ul li .logos-redes {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
+.contenedor-tres ul li .whatsapp {
   position: fixed;
   width: 70px;
   height: 70px;
   bottom: 40px;
   right: 40px;
-  background-color: #25d366;
-  color: #fff;
   border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  z-index: index 5;
 }
-
-.wsp {
+.contenedor-tres ul li .whatsapp:hover {
+  transform: translateY(-20%);
+}
+.contenedor-tres ul li .whatsapp .wsp {
   width: 100%;
   height: 100%;
 }
@@ -237,14 +235,19 @@ footer {
 /*variables*/
 /*mixins*/
 /*fase Beta*/
-.titulo_clientes, .contenedor-clientes, .noso img, #card_p .card-img, #card_p {
+.titulo_clientes, .contenedor-clientes, .noso img, .productos_varios #card_p .card-img, .productos_varios #card_p {
   border-right: 5px solid rgba(243, 22, 255, 0.6);
   border-left: 5px solid rgba(0, 255, 255, 0.6);
   background: rgba(0, 0, 0, 0.4);
   border-radius: 15px 15px 15px 15px !important;
 }
 
-#card_p {
+.productos_varios {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.productos_varios #card_p {
   width: 250px;
   height: 300px;
   padding: 0.8em;
@@ -253,9 +256,16 @@ footer {
   overflow: visible;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   display: inline-table;
-  margin: 20px;
+  margin: 10px;
 }
-#card_p .card-img {
+.productos_varios #card_p .card-info {
+  padding-top: 10%;
+  width: -webkit-fill-available;
+}
+.productos_varios #card_p .card-info .text-body {
+  color: #fff !important;
+}
+.productos_varios #card_p .card-img {
   background-color: #ffcaa6;
   height: 100%;
   width: 100%;
@@ -263,28 +273,14 @@ footer {
   transition: 0.3s ease;
   overflow: hidden;
 }
-#card_p .card-img:hover {
+.productos_varios #card_p .card-img:hover {
   transform: translateY(-30%);
   box-shadow: rgb(255, 255, 255) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
 }
-#card_p .card-img .img_product {
+.productos_varios #card_p .card-img .img_product {
   height: 100%;
   width: 100%;
   overflow: hidden;
-}
-
-.card-info {
-  padding-top: 10%;
-  width: -webkit-fill-available;
-}
-.card-info .text-body {
-  color: #fff !important;
-}
-
-svg {
-  width: 20px;
-  height: 20px;
-  background-color: green;
 }
 
 .card-footer {
@@ -294,6 +290,24 @@ svg {
   align-items: center;
   padding-top: 10px;
   border-top: 1px solid #ddd;
+}
+.card-footer .card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  background-color: rgb(107, 106, 106);
+}
+.card-footer .card-button:hover {
+  border: 1px solid #f7cdb1;
+  background-color: #f7cdb1;
+  box-shadow: 0 0 20px #f7cdb1;
+}
+.card-footer svg {
+  width: 20px;
+  height: 20px;
 }
 
 /*variables*/
@@ -309,6 +323,7 @@ svg {
 .container-form {
   display: flex;
   justify-content: center;
+  margin: 30px 0px;
 }
 .container-form .login-form {
   margin: 10px 0px 10px 0px;
@@ -368,10 +383,15 @@ h1 {
   padding: 10px;
   margin: 20px;
 }
-
-h2 {
+.nosotros-proyeccion h3 {
   text-align: center;
-  margin-top: 40px;
+  text-decoration: underline;
+  margin-top: 30px;
+  font-size: 35px;
+}
+.nosotros-proyeccion h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /*variables*/
@@ -408,6 +428,7 @@ body::before {
   z-index: -1;
 }
 
+/*pagina principal*/
 .carrusel-de-img {
   display: flex;
   justify-content: center;
@@ -454,6 +475,9 @@ body::before {
 }
 
 /*logodenosotros*/
+.noso {
+  padding: 25px 0px;
+}
 .noso img {
   width: -webkit-fill-available;
 }
